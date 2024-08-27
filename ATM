@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int balance=40000,pin,credit,debit,option;
+    int a=20000;
+    printf("Enter the pin:");
+    scanf("%d",&pin);
+    if(pin==1066)
+    {
+        printf("\n 1.Balance amt");
+        printf("\n 2.Credit amt");
+        printf("\n 3.Debited amt");
+        printf("\n Choose Your Option:");
+        scanf("%d",&option);
+        if(option==1)
+        {
+            printf("balance=%d",balance);
+        }
+        else if(option==2)
+        {
+            credit=balance+a;
+            printf("credited amt=%d",credit);
+        }
+        else if(option==3)
+        {
+            debit=balance-a;
+            printf("debited amt=%d",debit);
+        }
+        else
+        {
+            printf("Invalid Password");
+        }
+    else
+    {
+        printf("Invalid Password");
+    }
+    }
+}
